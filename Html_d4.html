@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
+    <style>
+        /* Group selector */
+        table,th,td,caption{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            font-size: x-large;
+        }
+        caption{
+            background-color: bisque;
+        }
+        th{
+            background-color: dimgray;
+            color: crimson;
+        }
+        td{
+            background-color: rgb(105, 140, 238);
+            color: white;
+        }
+        .c{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- table -->
+
+    <table>
+        <thead>
+            <caption>Student Details</caption>
+            <tr>
+                <th>Name</th>
+                <th>course</th>
+                <th>age</th>
+                <th>phone</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Praveen</td>
+                <td colspan="3">Java</td>
+                <!-- <td>2</td> -->
+                <!-- <td>7418529635</td> -->
+            </tr>
+
+            <tr>
+                <td>Loges</td>
+                <td rowspan="3" class="c">CSS</td>
+                <td>3</td>
+                <td>8527419635</td>
+            </tr>
+
+            <tr>
+                <td>Thiru</td>
+                <!-- <td>CSS</td> -->
+                <td>5</td>
+                <td>9876543215</td>
+            </tr>
+
+            <tr>
+                <td>Nivethitha</td>
+                <!-- <td>Javascript</td> -->
+                <td>2</td>
+                <td>9876544321</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" >&copy; by Praveen Kumar</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- HTML Entites -->
+    <h1>&#169; &#8635;</h1>
+    <h2>&#8486; &#8512;</h2>
+
+
+    <!-- Html Inline/block level elements -->
+     <i>Hello</i>
+     <b>Thiru</b>
+     <a href="https://www.toptal.com/designers/htmlarrows/symbols/">Toptal</a>
+
+     <h1 style="color: blue;">Praveen <span style="color: red;">Kumar</span></h1>
+
+     <div>
+        <p>Hello Salem</p>
+     </div>
+
+</body>
+</html>

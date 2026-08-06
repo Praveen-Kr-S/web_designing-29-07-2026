@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        header{
+            background-color: bisque;
+            height: 50px;
+            width: 100vw;
+            position: fixed;
+        }
+
+        ul{
+           display: flex;
+           gap: 40px;
+           justify-content: center;
+           padding: 0px;
+           
+        }
+
+        li{
+            list-style-type: none;
+            font-size: larger;
+            font-weight: 700;
+        }
+
+        div{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a{
+            text-decoration-line: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#h">Home</a></li>
+                <li><a href="#p">Products</a></li>
+                <li><a href="#s">Service</a></li>
+                <li><a href="#a">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div style="background-color: rgb(254, 255, 196);" id="h"><h1>Home</h1></div>
+        <div style="background-color: rgb(198, 255, 196);" id="p"><h1>Product</h1></div>
+        <div style="background-color: rgb(255, 196, 196);" id="s"><h1>Service</h1></div>
+        <div style="background-color: rgb(196, 197, 255);" id="a"><h1>About</h1></div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
