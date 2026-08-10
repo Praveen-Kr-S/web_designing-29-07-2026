@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: rgb(160, 47, 47);
+        }
+        div{
+            background-color: burlywood;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .square{
+            background-color: cornflowerblue;
+            width: 200px;
+            height: 200px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+        }
+
+        #cc{
+            background-color: darkslategray;
+        }
+
+        input{
+            color: inherit;
+            background-color: inherit;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-color: chocolate;
+        }
+
+        .bg{
+            background-image: url(msd.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="square" id="cc"></div>
+        <h1>Praveen Kumar</h1>
+    </div>
+
+
+    <div style="display: block; padding-left: 40px; height: 150vh;">
+        <form style="display: inherit;">
+            <fieldset style="padding-left: 50px;">
+                <legend><b>User Data Form</b></legend>
+                <label for="name">User Name : <label>
+                <input type="text" id="name">
+                    <br><br>
+                <label for="email">Email : </label>
+                <input type="email" id="email" placeholder="Thiru@gamil.com">
+                    <br><br>
+                <label for="phone">Phone : </label>
+                <input type="tel" id="phone" placeholder="+91 00000 00000">
+                    <br><br>
+                <label for="age">Age : </label>
+                <input type="number" id="age">
+                    <br><br>
+                <label for="dob">Dob : </label>
+                <input required type="date" id="dob">
+                    <br><br>
+                <label for="photo">Photo : </label>
+                <input required type="file" id="photo">
+                    <br><br>
+                <label for="password">Password : </label>
+                <input type="password" id="password" required>
+                    <br><br>
+
+                    <!-- Radio Box -->
+                <label for="dom">Domain : </label>
+                <br>
+                <input type="radio" name="domain" value="Python Full stack">
+                <label for="c">Python Full stack</label>
+                <br>
+                <input type="radio" name="domain" value="Java Full stack">
+                <label for="c">Java Full stack</label>
+                <br>
+                <input type="radio" name="domain" value="MERN Full stack">
+                <label for="c">MERN Full stack</label>
+                <br>
+                <input type="radio" name="domain" value="Full stack With AI">
+                <label for="c">Full stack With AI</label>
+                <br>
+                <br>
+
+                <!-- checkbox -->
+                <label for="Eduction">Eduction : </label>
+                <br>
+                <input type="checkbox" name="domain" value="Python Full stack">
+                <label for="c">Python Full stack</label>
+                <br>
+                <input type="checkbox" name="domain" value="Java Full stack">
+                <label for="c">Java Full stack</label>
+                <br>
+                <input type="checkbox" name="domain" value="MERN Full stack">
+                <label for="c">MERN Full stack</label>
+                <br>
+                <input type="checkbox" name="domain" value="Full stack With AI">
+                <label for="c">Full stack With AI</label>
+                <br>
+                <br>
+                <label for="Country">Country</label>
+                <select name="Country" id="co">
+                    <option value="India">India </option>
+                    <option value="UK">UK </option>
+                    <option value="China">China </option>
+                    <option value="Japan">Japan </option>
+                </select>
+
+                <br><br>
+                <label for="message">Messaage : </label>
+                <br>
+                <textarea name="message" id="message"></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <button>Reset</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="bg" style="justify-content: space-evenly;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62517.5551308215!2d78.1369704!3d11.669788!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf15bc3c77f21%3A0xbd2551badf759a4b!2sLivewire%20-%20Software%20Training%20Institute%20in%20Salem%20%7C%20Web%20Development%20%7C%20Data%20Science%20%7C%20AI%20ML%20Developer%20%7C%20Cyber%20Security%20Course!5e0!3m2!1sen!2sin!4v1786340822844!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/B5LBK5fPBzk?si=kvc-gaBXI9tVRMvD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
