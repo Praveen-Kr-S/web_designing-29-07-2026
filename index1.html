@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csss Day 1</title>
+    <link rel="stylesheet" href="Style1.css">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(196, 219, 255);
+        }
+
+        h1,h2{
+            color: coral;
+        }
+
+        h3{
+            text-align: center;
+            padding: 20px 0px;
+            border: 3px solid salmon;
+            background-color: cornsilk;
+            width: 600px;
+            margin: 100px;
+        }
+
+        h3:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        .fl{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: gray;
+            height: 50vh;
+            padding: 50px;
+
+        }
+
+        .hsl{
+            width: 100px;
+            height: 100px;
+            background-color: hsla(360, 100%, 20%,0.3);
+        }
+
+        .rgba{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 0, 0, 0.7);
+        }
+
+        .hsla{
+            width: 100px;
+            height: 100px;
+            background-color: hsla(120, 100%, 50%, 0.2);
+        }
+
+        .bg{
+            height: 100vh;
+            background-image: url(netflix_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+        /* Radial Gradient */
+
+        .rd{
+            width: 200px;
+            height: 300px;
+            background-image: radial-gradient(orange,white,green,blue);
+        }
+
+        .ld{
+            width: 200px;
+            height: 300px;
+            /* background-image: linear-gradient(to top,green,white,red,coral); */
+            background-image: linear-gradient(135deg,green,white,red,coral);
+        }
+
+        .cd{
+            width: 200px;
+            height: 300px;
+            background-image: conic-gradient(yellow,gray,green,blue,red,white);
+        }
+
+    </style>
+</head>
+<body style="background-color: rgb(221, 255, 196);">
+
+
+         <h2>Hello</h2>
+
+    
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quidem incidunt et adipisci quia amet eveniet non nesciunt alias odit!</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quidem incidunt et adipisci quia amet eveniet non nesciunt alias odit!</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quidem incidunt et adipisci quia amet eveniet non nesciunt alias odit!</h1>
+
+        <h3>Hello Developers</h3>
+        
+        <div class="fl">
+            <div class="hsl"></div>
+            <div class="rgba"></div>
+            <div class="hsla"></div>
+        </div>
+
+        <div class="bg">
+
+            <div style="height: 100px; background-color: black; height: 100vh; opacity: 0.6;">
+                
+            </div>
+            
+        </div>
+
+
+        <div class="fl">
+            <div class="rd"></div>
+            <div class="ld"></div>
+            <div class="cd"></div>
+        </div>
+        
+    
+    
+</body>
+</html>
