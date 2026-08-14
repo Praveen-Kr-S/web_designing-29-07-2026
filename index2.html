@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Day 2</title>
+
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+
+
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .sq{
+            background-color: chocolate;
+            width: 200px;
+            /* height: 50px; */
+            padding: 20px;
+            padding: 50px;
+            padding: 100px 10px;
+            padding: 100px 10px 200px;
+            padding: 100px 10px 200px 300px;
+            margin: 20px 200px ;
+        }
+
+        .bg{
+            height: 100vh;
+            background-image: url(bg_two.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+
+        .layer{
+             height: 100vh;
+             background-color: black;
+             opacity: 0.7;
+             display: flex;
+             justify-content: space-evenly;
+             padding-top: 50px;
+             
+        }
+
+        .layerr{
+             height: 100vh;
+             background-color: black;
+             opacity: 0.7;
+             display: flex;
+             justify-content: space-evenly;
+             padding-top: 50px;
+             
+        }
+
+        .c{
+            opacity: 1;
+            color: red;
+            border: 3px solid red;
+            height: 100px;
+            width: 650px;
+            box-shadow: 5px 5px 10px ghostwhite inset;
+        }
+
+        .title{
+            
+            padding: 30px 0 0 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 42px;
+            text-shadow: 3px 3px 5px ghostwhite;
+        }
+
+        img{
+            filter: drop-shadow(10px 10px 5px gray);
+        }
+
+        .hh{
+            color: chartreuse;
+            text-align: center;
+            text-decoration-line: underline;
+            text-decoration-color: brown;
+            text-transform:lowercase;
+            letter-spacing: 15px;
+            word-spacing: 30px;
+            white-space: 7px;
+            line-height: 50px; 
+            font-family: "Rubik Spray Paint", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="sq">
+        Hello Developers
+    </div>
+
+
+    <div class="bg">
+        <div class="layer">
+            <div class="c">
+                <h1 class="title">NETFLIX</h1>
+            </div>
+
+            <div>
+                <img src="Netflix_logo.svg" alt="NT_logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="layerr" style="color: whitesmoke;">
+        <h1 class="hh">
+            Welcome AMAZON  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi totam, cupiditate officiis nemo voluptas minus doloremque ex at enim nisi dicta, ea perferendis exercitationem quisquam vero veritatis. Minima ducimus corrupti placeat dolor at ullam non vitae optio labore, totam a repellendus beatae qui impedit quidem. Quaerat praesentium odio sed unde!  
+        </h1>
+    </div>
+    
+</body>
+</html>
