@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        /* Font Awsome */
+
+        a:link{
+            color: black;
+        }
+        a:visited{
+            color: black;
+        }
+
+
+        /* Medio query for resposive design */
+
+        @media screen and (max-width:575px)  {
+            .rs{
+                background-color: coral;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+            }
+
+            h1{
+               color: cornsilk; 
+            }
+            h2{
+                color: gray;
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:767px) {
+            .rs{
+                background-color: rgb(241, 84, 27);
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+            }
+
+            h1{
+               color: cornsilk; 
+               font-size: 45px;
+            }
+            h2{
+                color: gray;
+                font-size: 36px;
+            }
+
+            img{
+                border: 2px solid whitesmoke;
+                border-radius: 30%;
+            }
+        }
+        /* Medium */
+        @media screen and (min-width:768px) and (max-width:991px) {
+
+            .rs{
+                background-color: coral;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* flex-direction: column; */
+                gap: 100px;
+                
+            }
+
+            h1{
+               color: cornsilk; 
+               font-size: 55px;
+            }
+            h2{
+                color: gray;
+                font-size: 40px;
+            }
+
+            img{
+                border: 2px solid whitesmoke;
+                border-radius: 30%;
+            }
+
+
+        }
+
+         @media screen and (min-width:992px) and (max-width:1199px) {
+
+            .rs{
+                background-color: rgb(80, 124, 255);
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* flex-direction: column; */
+                gap: 100px;
+                
+            }
+
+            h1{
+               color: cornsilk; 
+               font-size: 65px;
+            }
+            h2{
+                color: rgb(69, 66, 66);
+                font-size: 55px;
+            }
+
+            img{
+                border: 2px solid whitesmoke;
+                border-radius: 50%;
+                width: 400px;
+                height: 400px;
+
+            }
+
+
+        }
+
+        /* Position */
+
+        .ps{
+            height: 100vh;
+            background-color: burlywood;
+        }
+
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: cadetblue;
+        }
+
+        .static{
+            position: static;
+            bottom: 100px;
+            left: 200px;
+        }
+
+        .relative{
+            position: relative;
+            top: 200px;
+            left: 250px;
+        }
+
+        .absolute{
+            position: absolute;
+            top: -50px;
+            left: -50px;
+
+        }
+
+        .fixed{
+            position: fixed;
+            top: 200px;
+            left: 250px;
+        }
+
+        .sticky{
+            position: sticky;
+            top: 0%;
+        }
+
+        /* Z-index */
+
+        .zi{
+            position: absolute;
+            top: 2500px;
+            left: 30px;
+        }
+
+        /* Over flow */
+
+        .or{
+            height: 150vh;
+            background-color: indianred;
+        }
+
+        .orr{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+        }
+
+        .v{
+            overflow: visible;
+        }
+
+        .h{
+            overflow: hidden;
+        }
+
+        .s{
+            overflow: scroll;
+        }
+
+        .a{
+            overflow:  auto;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<!-- icons/font-awsome -->
+    <!-- <a href=""><i class="fa-brands fa-square-linkedin"></i></a> -->
+<!-- Media Query -->
+    <div class="rs">
+        <div>
+            <h1>Praveen Kumar</h1>
+            <h2>Python Developer</h2>
+        </div>
+        <img src="Profile_pic.jpeg" alt="" width="200" height="220">
+    </div>
+<!-- Static -->
+    <div class="ps">
+        <div class="box static"></div>
+    </div>
+<!-- relative -->
+    <div class="ps" style="background-color: crimson;">
+        <div class="box relative"></div>
+    </div>
+<!-- absolute -->
+    <div class="ps" style="background-color: rgb(48, 86, 43);">
+        <div class="box absolute"></div>
+    </div>
+<!-- fixed -->
+    <div class="ps" style="background-color: rgb(43, 73, 86);">
+        <h1>Position FIxed</h1>
+        <!-- <div class="box fixed"></div> -->
+    </div>
+<!-- sticky -->
+    <div class="ps" style="background-color: rgb(120, 52, 93);">
+        <div class="box sticky"></div>
+    </div>
+
+
+    <!-- Z-index -->
+    <div class="ps" style="background-color: rgb(160, 220, 255);">
+        <h1>Z-Index</h1>
+        <div class="box zi" style="background-color: rgb(135, 132, 122); z-index: 9;"></div>
+        <div class="box zi" style="background-color: green; z-index: 5; "></div>
+        <div class="box zi" style="background-color: indigo; z-index: 10;"></div>
+        <div class="box zi" style="background-color: khaki; z-index: 6;"></div>
+    </div>
+
+
+    <div class="or">
+        <h1>Over-Flow</h1>
+
+        <div style="height: 100vh; display: flex; justify-content: space-around; align-items: center;">
+
+            <div class="orr v">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat minus nostrum laboriosam alias esse cupiditate est facere at, nulla quis quos enim accusamus molestias ipsam vitae a dolorum. Non doloremque minus cum. Voluptatem maxime fugiat magni rerum voluptate? Magni sapiente laborum aperiam rem vel, ex itaque minus ea consequuntur nisi, veritatis nostrum a maiores deserunt ipsa animi at dolore cupiditate odit, necessitatibus maxime eius non. Aut at ullam debitis laborum, sapiente doloremque minima, nisi alias excepturi maiores, porro perspiciatis qui fuga vitae! Quod adipisci facilis, quia dolor cum voluptate voluptas consectetur animi unde inventore porro deleniti iste fuga odio?</div>
+            <div class="orr h">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat minus nostrum laboriosam alias esse cupiditate est facere at, nulla quis quos enim accusamus molestias ipsam vitae a dolorum. Non doloremque minus cum. Voluptatem maxime fugiat magni rerum voluptate? Magni sapiente laborum aperiam rem vel, ex itaque minus ea consequuntur nisi, veritatis nostrum a maiores deserunt ipsa animi at dolore cupiditate odit, necessitatibus maxime eius non. Aut at ullam debitis laborum, sapiente doloremque minima, nisi alias excepturi maiores, porro perspiciatis qui fuga vitae! Quod adipisci facilis, quia dolor cum voluptate voluptas consectetur animi unde inventore porro deleniti iste fuga odio?</div>
+            <div class="orr s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat minus nostrum laboriosam alias esse cupiditate est facere at, nulla quis quos enim accusamus molestias ipsam vitae a dolorum. Non doloremque minus cum. Voluptatem maxime fugiat magni rerum voluptate? Magni sapiente laborum aperiam rem vel, ex itaque minus ea consequuntur nisi, veritatis nostrum a maiores deserunt ipsa animi at dolore cupiditate odit, necessitatibus maxime eius non. Aut at ullam debitis laborum, sapiente doloremque minima, nisi alias excepturi maiores, porro perspiciatis qui fuga vitae! Quod adipisci facilis, quia dolor cum voluptate voluptas consectetur animi unde inventore porro deleniti iste fuga odio?</div>
+            <div class="orr a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat minus nostrum laboriosam alias esse cupiditate est facere at, nulla quis quos enim accusamus molestias ipsam vitae a dolorum. Non doloremque minus cum. Voluptatem maxime fugiat magni rerum voluptate? Magni sapiente laborum aperiam rem vel, ex itaque minus ea consequuntur nisi, veritatis nostrum a maiores deserunt ipsa animi at dolore cupiditate odit, necessitatibus maxime eius non. Aut at ullam debitis laborum, sapiente doloremque minima, nisi alias excepturi maiores, porro perspiciatis qui fuga vitae! Quod adipisci facilis, quia dolor cum voluptate voluptas consectetur animi unde inventore porro deleniti iste fuga odio?</div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
