@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .ff{
+            /* float: left; */
+            float: right;
+        }
+
+        .bg{
+            height: 100vh;
+            background-image: url(https://img.magnific.com/free-vector/happy-onam-celebration-vector-post-design_505751-9423.jpg?semt=ais_hybrid&w=740&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .la{
+            height: 100vh;
+            background-color: black;
+            opacity: 0.8;
+        }
+
+
+        .ts{
+            margin: 150px;
+            transition: height 2s, width 2s, transform 2s;
+        }
+
+        .ts:hover{
+            /* height: 300px;
+            width: 300px; */
+            transform: rotate(45deg);
+            transform: rotate(180deg);
+            transform: rotateX(90deg);
+            transform: rotateY(45deg);
+            transform: scale(2);
+            transform: skew(45deg);
+            transform: skewX(45deg);
+            transform: skewY(20deg);
+
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            padding: 30px 0px;
+            
+        }
+
+        li{
+            list-style: none;
+            font-size: 20px;
+            transition: font-size 1s, font-weight 1s, color 1s, text-decoration-line 1s;
+        }
+
+        li:hover{
+            font-size: 23px;
+            font-weight: 900;
+            color: coral;
+            text-decoration-line: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Products</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+
+    <img class="ff" src="https://img.magnific.com/free-vector/happy-onam-celebration-vector-post-design_505751-9423.jpg?semt=ais_hybrid&w=740&q=80" alt="onam" width="150" height="150">
+
+    <div class="bg">
+        <div class="la">
+
+            <img class="ts" src="https://img.magnific.com/free-vector/happy-onam-celebration-vector-post-design_505751-9423.jpg?semt=ais_hybrid&w=740&q=80" alt="onam" width="150" height="150">
+            
+
+        </div>
+    </div>
+
+
+</body>
+</html>
