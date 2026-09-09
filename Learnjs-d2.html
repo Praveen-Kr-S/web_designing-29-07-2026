@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript day-2</title>
+</head>
+<body>
+    <!-- CSS DOM -->
+     <h1></h1>
+<hr>
+     <!-- Data types -->
+      <h1>Data Types</h1>
+
+      <h1 class="ts"></h1>
+      <h1 class="ts"></h1>
+      <h1 class="ts"></h1>
+      <h1 class="ts"></h1>
+      <h1 class="ts"></h1>
+<hr>
+      <!-- Arithmetic Operator -->
+       <h1>Arithmetic Operator</h1>
+        <div id="ac">
+           <h2 class="ar"></h2>
+            <h2 class="ar"></h2>
+            <h2 class="ar"></h2>
+            <h2 class="ar"></h2>
+            <h2 class="ar"></h2> 
+        </div>
+<hr>
+      <!-- Assignment Operator -->
+       <h1>Assignment Operator</h1>
+        <div id="cc">
+            <h2 class="as"></h2>
+            <h2 class="as"></h2>
+            <h2 class="as"></h2>
+            <h2 class="as"></h2>
+            <h2 class="as"></h2> 
+            <h2 class="as"></h2> 
+            <h2 class="as"></h2> 
+        </div>
+<hr>
+        <!-- Conditional Operator -->
+
+        <h1>Comparsion Operator</h1>
+        <div class="cc">
+            <h1 class="data"></h1>
+            <h1 class="data"></h1>
+            <h1 class="data"></h1>
+            <h1 class="data"></h1>
+
+            <h2 class="cn"></h2>
+            <h2 class="cn"></h2>
+            <h2 class="cn"></h2>
+            <h2 class="cn"></h2>
+            <h2 class="cn"></h2>
+            <h2 class="cn"></h2>
+        </div>
+
+        <br>
+        <!-- JS Tasks -->
+
+        <h1 class="avg"></h1>
+
+       
+
+    <script>
+        document.getElementsByTagName("h1")[0].innerHTML="Livewire";
+        document.getElementsByTagName("h1")[0].style.color="blue";
+        document.getElementsByTagName("h1")[0].style.backgroundColor="red";
+
+
+        // data types
+        const name = "Nivethitha";
+        document.getElementsByClassName("ts")[0].innerHTML=name+" - "+typeof(name);
+        const age = 20;
+        document.getElementsByClassName("ts")[1].innerHTML=age+" - "+typeof(age);
+        const cgpa = 7.43;
+        document.getElementsByClassName("ts")[2].innerHTML=cgpa+" - "+typeof(cgpa);
+        const is_check = true;
+        document.getElementsByClassName("ts")[3].innerHTML=is_check+" - "+typeof(is_check);
+        const check = false;
+        document.getElementsByClassName("ts")[4].innerHTML=check+" - "+typeof(check);
+
+        
+
+        // operators
+        // Arithmetic Operator
+        // +,-,*,/,%-get the remainder of divition
+        let a,b;
+        a = 5;
+        b = 2;
+
+        document.getElementsByClassName("ar")[0].innerHTML="Add Value : "+(a+b);
+        document.getElementsByClassName("ar")[1].innerHTML="Subtract Value : "+(a-b);
+        document.getElementsByClassName("ar")[2].innerHTML=`Multiple Value : ${a*b}`;
+        document.getElementsByClassName("ar")[3].innerHTML=`Divide Value : ${a/b}`;
+        document.getElementsByClassName("ar")[4].innerHTML=`Modules Value : ${a%b}`;
+        document.getElementById("ac").style.color = "gray";
+
+        // Assignment Operator
+        // +=,-=,*=,/=,%=
+        let c = 10;
+
+        document.getElementsByClassName("as")[0].innerHTML="C Value : "+(c);
+        document.getElementsByClassName("as")[1].innerHTML="+= Value : "+(c+=5);
+        document.getElementsByClassName("as")[2].innerHTML="-= Value : "+(c-=10);
+        document.getElementsByClassName("as")[3].innerHTML="*= Value : "+(c*=2);
+        document.getElementsByClassName("as")[4].innerHTML="/= Value : "+(c/=4);
+        document.getElementsByClassName("as")[5].innerHTML="%= Value : "+(c%=2);
+        document.getElementsByClassName("as")[6].innerHTML="C Value : "+(c);
+        document.getElementById("cc").style.color = "gray";
+        
+
+        // Conditional Operator
+        // ==,!=,<,>,<=,>=
+
+        let a1=10,a2=20,a3=30,a4=20;
+
+        document.getElementsByClassName("data")[0].innerHTML=`a1 value : ${a1}`
+        document.getElementsByClassName("data")[1].innerHTML=`a2 value : ${a2}`
+        document.getElementsByClassName("data")[2].innerHTML=`a3 value : ${a3}`
+        document.getElementsByClassName("data")[3].innerHTML=`a4 value : ${a4}`
+
+        document.getElementsByClassName("cn")[0].innerHTML=`a2 == a4 : ${a2 == a4}`
+        document.getElementsByClassName("cn")[1].innerHTML=`a2 != a3 : ${a2 != a3}`
+        document.getElementsByClassName("cn")[2].innerHTML=`a2 < a3 : ${a2 < a3}`
+        document.getElementsByClassName("cn")[3].innerHTML=`a4 > a1 : ${a4 > a1}`
+        document.getElementsByClassName("cn")[4].innerHTML=`a4 <= a2 : ${a4 <= a2}`
+        document.getElementsByClassName("cn")[5].innerHTML=`a3 >= a2 : ${a3 >= a2}`
+        document.getElementsByClassName("cc")[0].style.color="gray";
+
+        // find the average of three numbers
+        let n1 = 20,n2=30,n3=10;
+
+        let avg = (n1+n2+n3)/3
+        document.getElementsByClassName("avg")[0].innerHTML=`3 Numbers Average Value : ${avg}`
+
+        
+
+
+
+        
+
+    </script>
+</body>
+</html>
