@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript day-3</title>
+</head>
+<body>
+    <!-- Unary Operator -->
+     <h1>Unary Operator</h1>
+     <h2></h2>
+     <h2></h2>
+
+     <script>
+        let a = 10;
+        a++;
+        a++;
+        document.getElementsByTagName("h2")[0].innerHTML="Unary increment => a : "+a;
+        a--;
+        a--;
+        a--;
+        document.getElementsByTagName("h2")[1].innerHTML="Unary decrement =>  a : "+a;
+     </script>
+<hr>
+     <!-- Logical Operator -->
+
+     <h1>Logical Operator</h1>
+     <h1>and => <mark> &&</mark>, or => <mark>||</mark> , not =><mark>!(condition)</mark></h1>
+
+     <h2 class="lg"></h2>
+     <h2 class="lg"></h2>
+     <h2 class="lg"></h2>
+
+     <script>
+        a = 10;
+        let b = 20;
+        let c = 10;
+
+        document.getElementsByClassName("lg")[0].innerHTML=`&& => ${a==c && a!=b}`;
+        document.getElementsByClassName("lg")[1].innerHTML=`|| => ${a==b || b<c || a!=c}`; 
+        document.getElementsByClassName("lg")[2].innerHTML=`!() => ${!(a<b && a==b)}`;
+
+     </script>
+     <hr>
+     <!--  -->
+      <h1>Ternary Operator</h1>
+      <h1>scope variable = (condition)?expression-1:expression-2;</h1>
+      <h2 id="tr"></h2>
+      <script>
+        num1 = 1;
+        let value = (num1 > 5) ? "value is greter than 5":"value is lower than 5";
+        document.getElementById("tr").innerHTML=value;
+      </script>
+<hr>
+      <!-- Conditional Statement -->
+
+      <h1>Conditional Statement</h1>
+      <ul>
+        <li>if statement</li>
+        <li>if else statement</li>
+        <li>if-else if-else</li>
+        <li>Nested if</li>
+      </ul>
+
+      <h1>if statement</h1>
+      <h1>
+        <pre>
+            if (condition){
+                //true statement
+            }
+        </pre>
+      </h1>
+
+      <h2 id="if"></h2>
+
+<hr>
+      <h1>if - else statement</h1>
+      <h1>
+        <pre>
+            if (condition){
+                //true statement
+            }
+            else{
+               //false statement 
+            }
+        </pre>
+      </h1>
+
+      <h2 id="ie"></h2>
+<hr>
+      <script>
+        let v = 0;
+        if(v==0){
+            document.getElementById("if").innerHTML="Value is zero";
+        }
+
+        //odd or even
+        let n = 9;
+        if(n%2 == 0){
+            document.getElementById("ie").innerHTML="n is even number"
+        }
+        else{
+            document.getElementById("ie").innerHTML="n is odd number"
+        }
+      </script>
+
+
+
+</body>
+</html>
