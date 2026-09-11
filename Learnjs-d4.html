@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>else-if</h1>
+    <h1>
+        <pre>
+            if (condition){
+                //true statement
+            }
+            else if(condition){
+                //true statement
+            }
+            else if(condition){
+                //true statement
+            }..,
+            else{
+                //false statement
+            }
+        </pre>
+    </h1>
+
+    <h2 class="ef"></h2>
+    
+
+    <script>
+        let m = "march";
+
+        if(m=="January" || m=="march" || m == "may" || m=="july" || m== "august" || m=="october" || m == "december"){
+            document.getElementsByClassName("ef")[0].innerHTML=`${m} month is 31 days`;
+        }
+        else if(m=="april" || m=="june" || m == "september" || m=="november"){
+            document.getElementsByClassName("ef")[0].innerHTML=`${m} month is 30 days`;
+        }
+        else if (m == "february"){
+            document.getElementsByClassName("ef")[0].innerHTML=`${m} month is 28 days`;
+        }
+        else{
+            document.getElementsByClassName("ef")[0].innerHTML=`Enter the Month Name Properly..`;
+        }
+
+
+
+    </script>
+
+    <hr>
+    <!-- Nested if condition -->
+     <h1>Nested if Condition</h1>
+     <h1>
+        <pre>
+            if (condition){
+                if(condition){
+                    //true statement
+                }
+                 else{
+                    //false statement
+                }
+            }
+            else{
+                //false statement
+            }
+        </pre>
+    </h1>
+
+    <h2 class="ts"></h2>
+    <h2 class="ts"></h2>
+
+
+
+    
+
+
+    <script>
+       const email = "thirukumaran@gmail.com";
+
+        if(email == "thirukumaran@gmail.com"){
+            document.getElementsByClassName('ts')[0].innerHTML="Email Verfication Successed";
+            let pass = "123456";
+            if(pass == "12345"){
+                document.getElementsByClassName('ts')[1].innerHTML="User Login Successed";
+            }
+            else{
+                document.getElementsByClassName('ts')[1].innerHTML="Invailed Password";
+            }
+        }
+        else{
+            document.getElementsByClassName('ts')[0].innerHTML="Invailed Email Id";
+        }
+
+</script>
+
+    <h3 class="ns"></h3>
+    <h3 class="ns"></h3>
+
+
+<script>
+        const phone ="9080614565";
+
+        if(phone == "9080614565"){
+        document.getElementsByClassName("ns")[0].innerHTML=" Number verification successfull";
+        let password ="kumar";
+        if (password =="kumar"){
+            document.getElementsByClassName("ns")[1].innerHTML="user login successfull";
+        }
+        else{
+            document.getElementsByClassName("ns")[1].innerHTML="invalid password";
+        }
+
+    }
+    else{
+        document.getElementsByClassName("ns")[0].innerHTML="invalid Number"
+    }
+    </script>
+
+
+</body>
+</html>
