@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <h2>we can store multiple data in single variable with same data-type</h2>
+    <h3 class="ar"></h3>
+    <h3 class="ar"></h3>
+    <h3 class="ar"></h3>
+    <h3 class="ar"></h3>
+
+    <script>
+        // array litral
+        const students_name = [];
+        students_name[0] = "Nivethitha";
+        students_name[1] = "Logeshwar";
+        students_name[2] = "Praveen";
+        students_name[3] = "Thirukumaran";
+        students_name[4] = "Hema Priya";
+
+        document.getElementsByClassName("ar")[0].innerHTML=students_name;
+
+        const marks = [70,80,93,87,98];
+        document.getElementsByClassName("ar")[1].innerHTML=marks;
+        document.getElementsByClassName("ar")[2].innerHTML=students_name[3];
+
+        // new keyword method
+        const courses = new Array("Python","React.js","Django","Javascript");
+        document.getElementsByClassName("ar")[3].innerHTML=courses;
+
+        // for each loop
+
+        students_name.forEach(
+            (val,index)=>{
+                document.write(`${index} : ${val} </br>`)
+            }
+        )
+    document.write("------------------------------- </br>")
+        //map
+        courses.map((course, index) => {
+            document.write(`${index} : ${course} </br>`)
+            })
+
+    document.write("------------------------------- </br>")   
+        // for of loop
+        for(let m of marks){
+            document.write(`${m} </br>`)
+        }
+
+        // Strings in array
+        let name = "Javascript";
+        let l = " Programming Language";
+    document.write("------------------------------- </br>") 
+        document.write(name,"</br>")
+        document.write(name.toUpperCase() ,"</br>")
+        document.write(name.toLowerCase() ,"</br>")
+        document.write(name.charAt(4) ,"</br>")
+        document.write(name.concat(l) ,"</br>")
+        document.write(name.endsWith("pt") ,"</br>")
+        document.write(name.startsWith("Java") ,"</br>")
+        document.write(name.includes("script") ,"</br>")
+        document.write(name.indexOf("a") ,"</br>")
+        document.write(name.length ,"</br>")
+
+
+
+
+
+    </script>
+</body>
+</html>
