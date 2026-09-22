@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object in Js</h1>
+
+    <h2 class="u"></h2>
+    <script>
+        let info={
+            'name':'Praveen',
+            'age':2,
+            'city':'Salem',
+            course:'python',
+            1:"one",
+        }
+
+        document.write(info.name,"<br>")
+        document.write(info['age'],"<br>")
+        info.age = 4;
+        document.write(info['age'],"<br>")
+
+        // FUNCTIONS IN JAVASCRIPT
+
+        // for(let i=1;i<=10;i++){
+        //     document.writeln(i," Praveen <br>")
+        // }
+
+        /*
+        //function decleration:
+
+        function function_name(arguments){
+            //block of code
+        }
+        //function call:
+
+        // function_name();
+        */
+        //function decleration
+        //1.without argument function
+        function fire(){
+            document.writeln("Fire Mode is ON... <br>");
+        }
+        //function call
+        // fire();
+        // for(let i=1;i<=5;i++){
+        //     document.writeln(i," Praveen <br>")
+        // }
+        // fire();
+        // for(let i=1;i<=5;i++){
+        //     document.writeln(i," Kumar <br>")
+        // }
+        // fire();
+
+        //2.with argument function
+        function add(x,y){
+            var a = x;
+            var b = y;
+            document.writeln("Add Value : ",(a+b),"<br>")
+        }
+
+        // add(10,5);
+        // add(100,15);
+        // add(50,35);
+
+        //3.return type with argument function
+        //return keyword
+        /*
+        function function_name(arguments){
+            //block of code
+            //return value;
+        }
+        */
+
+        function con(){
+            // document.writeln("Full Name : ",fn+" "+ln,"<br>")
+
+            let name = fn+" "+ln;
+            return name;
+
+        }
+
+        // document.writeln(con("Praveen","Kumar"));
+        // let user = con("Hema","Priya");
+        // document.querySelector('.u').innerHTML=user;
+
+        //4.return type without argument function
+        function demo(){
+            let name = "Hello Thirukumaran";
+            return name;
+        }
+
+        // let d = demo();
+        // document.write(d+"<br>");
+        // let d1 = demo();
+        // document.writeln(d1);
+
+        // Recursive function
+
+        function fact(n){
+            if(n==0 || n==1){
+                return 1;
+            }
+            else{
+                return n*fact(n-1)
+            }
+        }
+        document.write("Factorial Value : ",fact(5),"<br>");
+        /*
+            return 5*fact(4)  -> 5*
+            return 4*fact(3)  -> 5*4* => 20*
+            return 3*fact(2)  -> 20*3* => 60*
+            return 2*fact(1)  -> 60*2* => 120*
+            return 120*1 => 120//
+        */
+       document.write("Factorial Value : ",fact(6));
+
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
