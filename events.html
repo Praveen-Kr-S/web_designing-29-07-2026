@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <h2>Mouse Event</h2>
+
+    <h2>Onclick()</h2>
+    <h3 class="text"></h3>
+    <button type="submit" onclick="a()">Print Text</button>
+
+    <script>
+        const a = () => {
+            document.getElementsByClassName("text")[0].innerHTML="Hello Logeswar";
+        }
+    </script>
+
+    <h2>onmousein-out</h2>
+    <h2 class="title" 
+        style="background-color: chocolate;"
+        onmouseenter="show('Praveen Kumar')"
+        onmouseout="hide()"
+        >
+            Praveen Kumar
+    </h2>
+    <h3 class="text"></h3>
+    <script>
+        function show(n){
+            let name = n;
+            let content = `${name} is Python Developer in Livewie`;
+            document.getElementsByClassName("text")[1].innerHTML=content;
+        }
+
+        let removeText = ()=>{
+            document.getElementsByClassName("text")[1].innerHTML="";
+        }
+        function hide(){
+            removeText();
+        }
+    </script>
+
+    <h2>onchange</h2>
+    <form>
+        <!-- <input type="text" name="User Name" class="username" onchange="getData(value)"> -->
+
+
+        <select name="" id="" onchange="getData()" class="country">
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="Japan">Japan</option>
+            <option value="France">France</option>
+        </select>
+    </form>
+    <h3 class="un"></h3>
+    <script>
+        function getData(){
+            let data = document.getElementsByClassName("country")[0].value;
+            document.getElementsByClassName("un")[0].innerHTML=data;
+        }
+    </script>
+
+    <h2>Keyboard events</h2>
+    <h2>onkeydown</h2>
+    <input type="text" onkeydown="kd()">
+    <h4 class="d"></h4>
+
+    <h2>onkeyup</h2>
+
+    <input type="text" class="ok" onkeyup="ku()">
+    <h4 class="d"></h4>
+
+
+    <script>
+        function kd(){
+            document.getElementsByClassName("d")[0].innerHTML="Onkeydown Event Executed..";
+            document.getElementsByClassName("d")[0].style.color="blue";
+        }
+
+        function ku(){
+            let data = document.getElementsByClassName("ok")[0];
+            data.value = data.value.toUpperCase();
+
+        }
+    </script>
+
+</body>
+</html>
