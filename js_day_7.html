@@ -18,10 +18,10 @@
             1:"one",
         }
 
-        document.write(info.name,"<br>")
-        document.write(info['age'],"<br>")
-        info.age = 4;
-        document.write(info['age'],"<br>")
+        // document.write(info.name,"<br>")
+        // document.write(info['age'],"<br>")
+        // info.age = 4;
+        // document.write(info['age'],"<br>")
 
         // FUNCTIONS IN JAVASCRIPT
 
@@ -108,7 +108,7 @@
                 return n*fact(n-1)
             }
         }
-        document.write("Factorial Value : ",fact(5),"<br>");
+        // document.write("Factorial Value : ",fact(5),"<br>");
         /*
             return 5*fact(4)  -> 5*
             return 4*fact(3)  -> 5*4* => 20*
@@ -116,14 +116,62 @@
             return 2*fact(1)  -> 60*2* => 120*
             return 120*1 => 120//
         */
-       document.write("Factorial Value : ",fact(6));
+    //    document.write("Factorial Value : ",fact(6));
 
 
-        
+        // Anonymous function expression
+            const add1 = function(a, b) {
+            return a + b;
+            };
+
+            let x1 = add1(40,50)
+
+            document.write("Add Value : ",x1,"<br>");
 
 
 
+        //arraow function
 
+        /*
+            scope function_name = (Argument) => {
+                 //block of code;
+                 //return value;
+            }
+        */
+
+        let reverse = (n) => {
+            let a=n;
+            let b=100;
+            let t=a;
+            // while(t>0){
+            //     let d = t%10;
+            //     b = b*10+d;
+            //     t = t/10;
+            // }
+
+            document.write(b)
+        }
+
+        reverse(121)
+        /*
+        121>0
+        d = 121%10 -> d=1
+        b=0*10+1 -> b=1
+        t=121/10 -> t = 12
+
+        12>0
+        d = 12%10 -> d=2
+        b=1*10+2 -> b=12
+        t=12/10 -> t = 1
+
+
+        1>0
+        d = 1%10 -> d=1
+        b=12*10+1 -> b=121
+        t=1/10 -> t = 0
+
+        t=0>0 ->fasle
+        */
 
 
     </script>
