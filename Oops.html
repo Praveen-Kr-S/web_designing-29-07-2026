@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OOPS</h1>
+    <h2>Class-Object</h2>
+    <script>
+        /*
+            Syntax of class: 
+            class class_name{
+                //set attributes and functions
+            }
+
+            Syntax of object: 
+            scope variable = new class_name();
+
+        */
+
+        class Mobile{
+            brand = null; 
+            model = null;
+            price = 0;
+            color = null;
+            ram = 0;
+            rom = 0;
+            buttom(){
+                console.log("Display ON/OFF");
+            }
+        }
+
+        let m1 = new Mobile();
+        m1.brand="Samsung";
+        m1.model="S23 Ultra";
+        m1.color="Red";
+        m1.ram=12;
+        m1.rom=512;
+        m1.price=115000;
+        document.writeln("Brand : "+m1.brand,"<br>")
+        document.writeln("Model : "+m1.model,"<br>")
+        document.writeln("Color : "+m1.color,"<br>")
+        document.writeln("Ram : "+m1.ram,"GB <br>")
+        document.writeln("Rom : "+m1.rom,"GB<br>")
+        document.writeln("Price : "+m1.price,"<br>")
+        m1.buttom();
+        document.writeln("------------------------------<br>")
+        
+
+        let m2 = new Mobile();
+        m2.brand="Realme";
+        m2.model="P3 Ultra";
+        m2.color="Green";
+        m2.ram=8;
+        m2.rom=256;
+        m2.price=30000;
+        document.writeln("Brand : "+m2.brand,"<br>")
+        document.writeln("Model : "+m2.model,"<br>")
+        document.writeln("Color : "+m2.color,"<br>")
+        document.writeln("Ram : "+m2.ram,"GB <br>")
+        document.writeln("Rom : "+m2.rom,"GB<br>")
+        document.writeln("Price : "+m2.price,"<br>")
+        m2.buttom();
+        document.writeln("------------------------------<br>")
+
+        class Car{
+            brand = null; 
+            model = null;
+            price = 0;
+            color = null;
+            cc = 0;
+
+            engine(){
+                console.log(this.brand," car engine start,run,off");
+            }
+
+            setData(b,m,p,c,cc){
+                this.brand = b;
+                this.model = m;
+                this.price = p;
+                this.color = c;
+                this.cc = cc;
+
+                document.writeln("Car Brand : "+this.brand,"<br>")
+                document.writeln("Car Model : "+this.model,"<br>")
+                document.writeln("Car Color : "+this.color,"<br>")
+                document.writeln("Car CC : "+this.cc,"<br>")
+                document.writeln("Car Price : "+this.price,"<br>")
+                this.engine();
+                document.writeln("------------------------------<br>")
+            }
+
+        }
+
+
+        let c1 = new Car();
+        c1.setData("BMW","X3",7500000,"White",3000);
+
+        let c2 = new Car();
+        c2.setData("TATA","Nexon",1500000,"Blue",1500);
+        
+
+    </script>
+</body>
+</html>
