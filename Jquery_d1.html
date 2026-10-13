@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jquery</h1>
+
+    <h2 id="con">Hello Developers</h2>
+    <h2 id="jc">Hello Engineers</h2>
+
+    <button type="submit" onclick="hd()" >Hide</button>
+    <button type="submit" id="btn">jQuery Hide</button>
+    <button type="submit" id="btn1">jQuery Show</button>
+
+
+    <p id="demo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <mark>Saepe laborum tenetur non odio corrupti repellat inventore nesciunt recusandae assumenda ratione!</mark>  Perspiciatis et consequatur totam, magnam odio repellat provident aliquid natus?
+    </p>
+
+    <button type="submit" id="btn2">Para Hide</button>
+    <button type="submit" id="btn3">Alert Text</button>
+    <button type="submit" id="btn4">Alert HTML</button>
+
+
+    <h1 class="value">Thirukumaran</h1>
+    <h2>User Name : <span class="show"></span></h2>
+    
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+
+        // function hd (){
+        //     document.getElementById("con").innerHTML="";
+        // }
+
+
+        // $("#btn").click(
+        //     ()=>{
+        //         $("#jc").hide();
+        //     }
+        // )
+
+        // $("#btn1").click(
+        //     ()=>{
+        //         $("#jc").show();
+        //     }
+        // )
+
+        $(document).ready(
+            ()=>{
+               $("#btn2").click(
+                ()=>{
+                    $("#demo").hide();
+                }
+               )
+            }
+        )
+
+
+        $("#btn3").click(
+            () => {
+                alert("Text : "+$("#demo").text());
+            }
+        )
+
+        $("#btn4").click(
+            () => {
+                alert("Text : "+$("#demo").html());
+            }
+        )
+
+
+        $(".value").mouseenter(
+            ()=>{
+                var Name = $(".value").val();
+                var Name = "Kumarn";
+                $(".show").text(`${Name}`);
+                // alert("NAME :"+ Name)
+            }
+        )
+
+
+    </script>
+
+</body>
+</html>
